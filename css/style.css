@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-    --main-color-bcg: rgb(130, 154, 106);
+    --main-color-bcg: #808d86;
     --main-color-txt: #0e2e0e;
     --main-color-act: #3c9360;
     --main-color-bcg-light: #e4e3e0;
@@ -142,21 +142,21 @@ body {
     padding-top: 1px;
 }
 
-.header .main-page-text {}
-
 .header .main-header {
     text-align: right;
     text-transform: uppercase;
     font-size: 35px;
     letter-spacing: 3px;
     font-weight: 500;
-    margin: 15px;
+    margin: 20px;
+    color: var(--main-color-txt);
 }
 
 .header .main-text {
     width: 350px;
-    margin: 25px 45px;
+    margin: 65px 75px;
     font-size: 20px;
+    color: var(--main-color-txt);
 }
 
 .btn {
@@ -166,7 +166,7 @@ body {
     letter-spacing: 0.5px;
     text-transform: lowercase;
     padding: 10px;
-    margin: 5px 110px;
+    margin: 5px 85px;
     color: var(--main-color-txt);
     background-color: var(--main-color-bcg);
     background: transparent;
@@ -329,7 +329,7 @@ body {
 }
 
 .price-request>input {
-    color: var(--main-color-bcg);
+    color: var(--main-color-bcg-light);
     background-color: var(--main-color-txt);
     padding: 7px;
     border: none;
@@ -363,7 +363,7 @@ body {
 }
 
 footer {
-    background-color: var(--main-color-bcg);
+    background-color: var(--main-color-bcg-light);
     color: var(--main-color-txt);
     padding-bottom: 15px;
 }
@@ -374,8 +374,8 @@ footer {
     padding: 10px;
 }
 
-form {
-    border: 1px solid var(--main-color-bcg-light);
+.footer-container form {
+    border: 1px solid var(--main-color-bcg);
     border-radius: 5px;
     overflow: hidden;
     width: 260px;
@@ -423,7 +423,7 @@ input {
     color: #fff;
     cursor: pointer;
     font-weight: bold;
-    margin: 5px 25px;
+    margin: 5px 25px 15px;
     padding: 15px 25px;
     font-size: 20px;
 }
@@ -446,7 +446,11 @@ input {
     opacity: 0.5;
 }
 
+textarea {
+    margin-top: 5px;
+}
 .social-media,
 .copirigth {
     text-align: center;
+    margin-top: 10px;
     }
